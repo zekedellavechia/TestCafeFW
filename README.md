@@ -21,3 +21,7 @@ https://testcafe.io/documentation/402834/guides/basic-guides/install-testcafe
 
 Do
 npm install -testcafe
+
+For docker:
+docker run -v ${PWD}/tests:/tests -it testcafe/testcafe firefox tests/session2/*.js   
+PWD refers to origin folder, tests: the folder to copy in /tests -it here we define the browser the folder and the js to execute
