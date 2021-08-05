@@ -1,8 +1,6 @@
-# TestCafeFW
-TestCafe Framework
+# Test Cafe Framework
 
-<p>
-**Installing TestCafe**
+### Installing **TestCafe**
 Ensure that Node.js and npm are installed on your computer and run the following command:
 
 `npm install -g testcafe`
