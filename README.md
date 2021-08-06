@@ -1,37 +1,23 @@
 # Test Cafe Framework
 
 ### Installing **TestCafe**
-Ensure that Node.js and npm are installed on your computer and run the following command:
+- Ensure that Node.js and npm are installed on your computer and run the following command: 
 
-`npm install -g testcafe`
+    `npm install -g testcafe`
 
-For more information, see Installing TestCafe.</p>
+--------
+### Installing Visual Studio Code:
+- Visit: https://code.visualstudio.com/Download and dowload the correct version for your OS.
 
+### Installing extension:
+- **TestCafe Snippets** can be installed from Visual Studio extensions. Just search it there and installed it.
 
-First steps:
-Install node.js
-nodejs.org > dowloads
+----
+### Docker image install:
+- Just do:
+`docker pull testcafe/testcafe` in the terminal. This will download the testcafe latest image from docker hub.
 
-Open CMD:
-node -v (will show that is installed)
-
-
-Install Visual Studio Code:
-https://code.visualstudio.com/Download
-
-Install extension:
-TestCafe Snippets
-
-Look for TestCafe Docs > Guides > install testcafe
-https://testcafe.io/documentation/402834/guides/basic-guides/install-testcafe
-
-Do
-npm install -testcafe
-
-For docker:
-
-Install docker image: docker pull testcafe/testcafe
-
-Then run it:
-docker run -v ${PWD}/tests:/tests -it testcafe/testcafe firefox tests/session2/*.js   
-PWD refers to origin folder, tests: the folder to copy in /tests -it here we define the browser the folder and the js to execute
+### Running tests in dockerized form:
+- To run the tests in its dockerized form use this input in terminal: 
+`docker run -v ${PWD}/tests:/tests -it testcafe/testcafe firefox tests/session2/*.js`
+- This will run all the test cases (the ones that are in tests/session2).
