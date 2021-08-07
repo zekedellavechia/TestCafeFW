@@ -10,14 +10,19 @@
 - Visit: https://code.visualstudio.com/Download and dowload the correct version for your OS.
 
 ### Installing extension:
-- **TestCafe Snippets** can be installed from Visual Studio extensions. Just search it there and installed it.
+- **TestCafe Snippets** can be installed from       Visual Studio extensions. Just search it there and installed it.
 
 ----
 ### Docker image install:
-- Just do:
-`docker pull testcafe/testcafe` in the terminal. This will download the testcafe latest image from docker hub.
+- Make sure docker is correctly installed in your **OS** then just do:
+
+    `docker pull testcafe/testcafe` 
+    
+    This will download the testcafe latest image from docker hub.
 
 ### Running tests in dockerized form:
 - To run the tests in its dockerized form use this input in terminal: 
-`docker run -v ${PWD}/tests:/tests -it testcafe/testcafe firefox tests/session2/*.js`
-- This will run all the test cases (the ones that are in tests/session2).
+
+    `docker run -v ${PWD}/tests:/tests -it testcafe/testcafe firefox tests/session2/*.js`
+
+    This will run all the test cases (the ones that are in tests/session2).
