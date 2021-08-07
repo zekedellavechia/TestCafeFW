@@ -13,6 +13,14 @@
 - **TestCafe Snippets** can be installed from       Visual Studio extensions. Just search it there and installed it.
 
 ----
+### Running tests from Visual Studio Terminal:
+- To run the tests from terminal just put **npm run** and the script name created in the **package.json** like:
+
+    `npm run <script_name>`
+
+    This will run all the test cases under the script.
+    
+----
 ### Docker image install:
 - Make sure docker is correctly installed in your **OS** then just do:
 
