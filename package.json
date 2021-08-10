@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "firstTest": "testcafe chrome tests/firstTest.js"
+    "firstTest": "testcafe chrome tests/firstTest.js --reporter html:reports/report.html"
   },
   "name": "testcafefw",
   "description": "- Ensure that Node.js and npm are installed on your computer and run the following command:",
@@ -10,7 +10,8 @@
     "test": "tests"
   },
   "dependencies": {
-    "testcafe": "^1.15.1"
+    "testcafe": "^1.15.1",
+    "testcafe-reporter-html": "^1.4.6"
   },
   "devDependencies": {},
   "repository": {

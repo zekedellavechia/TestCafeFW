@@ -15,7 +15,7 @@ const formGroup = Selector('.form-group')
 const buttonSubmit = Selector('a').withText('Submit')
 const successText = Selector('h1')
 
-fixture `Visit Test site`
+fixture `Fill forms and submit`
     .page `https://formy-project.herokuapp.com/form`;
 
 test('Fill form one', async t => {
