@@ -34,3 +34,7 @@
     `docker run -v ${PWD}/tests:/tests -it testcafe/testcafe firefox tests/session2/*.js`
 
     This will run all the test cases (the ones that are in tests/session2).
+
+
+### Script running issue:
+- When running from local using `testcafe chrome testname.js` for example, sometimes an error related to scripts run can pop up, we can skip this error by using:`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted` in the terminal.
