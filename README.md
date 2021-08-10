@@ -53,5 +53,9 @@ To run the tests in different windows we have to specify before the browser with
 We can also convine with headless like this:
 - testcafe -c 3 firefox:headless firstTest.js
 
+Running **multiple browsers** at the same time:
+You can run in multiple browsers at the same time by adding then together in the same line like this example:
+- testcafe chrome,firefox firstTest.js
+
 ### Script running issue:
 - When running from local using `testcafe chrome testname.js` for example, sometimes an error related to scripts run can pop up, we can skip this error by using:`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted` in the terminal.
