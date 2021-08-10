@@ -3,7 +3,7 @@ import { Selector } from 'testcafe';
 fixture `Visit Test site`
     .page `https://formy-project.herokuapp.com/form`;
 
-test('Fill form 1', async t => {
+test('Fill form one', async t => {
     await t
         .typeText(Selector('#first-name'), 'Zeke')
         .typeText(Selector('#last-name'), 'Dellavechia')
@@ -17,7 +17,7 @@ test('Fill form 1', async t => {
         .click(Selector('a').withText('Submit'))
     });
 
-    test('Fill form 2', async t => {
+    test('Fill form two', async t => {
         await t
             .typeText(Selector('#first-name'), 'Licha')
             .typeText(Selector('#last-name'), 'Navarrete')
@@ -30,3 +30,11 @@ test('Fill form 1', async t => {
             .click(Selector('.form-group'))
             .click(Selector('a').withText('Submit'))
         });
+
+        test('Verify form can be submitted', async t => {
+            const successText = Selector('h1')
+
+            await t
+                .click(Selector('a').withText('Submit'))
+                .expect(successText.textContent).eql('Thanks for submitting your form');
+        });    
