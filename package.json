@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "firstTest": "testcafe chrome tests/firstTest.js --reporter html:reports/report.html"
+    "classicReport": "testcafe chrome tests/*.js --reporter html:report.html",
+    "allureReport": "testcafe chrome tests/*.js --reporter allure"
   },
   "name": "testcafefw",
   "description": "- Ensure that Node.js and npm are installed on your computer and run the following command:",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "testcafe": "^1.15.1",
+    "testcafe-reporter-allure": "^1.0.5",
     "testcafe-reporter-html": "^1.4.6"
   },
   "devDependencies": {},

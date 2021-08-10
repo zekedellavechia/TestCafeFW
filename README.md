@@ -68,12 +68,16 @@ You can run in multiple browsers at the same time by adding then together in the
 - testcafe chrome,firefox firstTest.js
 
 -----
-### Reporter Install:
-To install the report simple type this command:
+### Reporters Install:
+To install **TestCafe report** simple type this command:
 ```bash
 npm install testcafe-reporter-html
 ```
 
+To install the **Allure** report simple type this command:
+```bash
+npm install testcafe-reporter-allure
+```
 -----
 ### Known Issues:
 When running from local using `testcafe chrome testname.js` for example, sometimes an error related to scripts run can pop up, we can skip this error by using this command in the **terminal**:
