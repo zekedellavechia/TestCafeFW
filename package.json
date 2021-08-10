@@ -1,5 +1,26 @@
 {
-    "scripts": {
-        "firstTest": "testcafe chrome tests/firstTest.js"
-    }
+  "scripts": {
+    "firstTest": "testcafe chrome tests/firstTest.js"
+  },
+  "name": "testcafefw",
+  "description": "- Ensure that Node.js and npm are installed on your computer and run the following command:",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "testcafe": "^1.15.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zekedellavechia/TestCafeFW.git"
+  },
+  "author": "Ezequiel Dellavechia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zekedellavechia/TestCafeFW/issues"
+  },
+  "homepage": "https://github.com/zekedellavechia/TestCafeFW#readme"
 }
