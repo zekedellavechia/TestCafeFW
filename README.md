@@ -35,6 +35,23 @@
 
     This will run all the test cases (the ones that are in tests/session2).
 
+### Several ways to run tests:
+Running the tests locally in different **browsers** (they have to be installed):
+- testcafe chrome firstTest.js
+- testcafe edge firstTest.js
+- testcafe safari firstTest.js
+- testcafe firefox firstTest.js
+
+Running the tests in **headless** mode:
+Simply add **headless** after the browser name like in this example:
+- testcafe chrome:headless firstTest.js
+
+Running **multiple tests** at the same time:
+To run the tests in different windows we have to specify before the browser with `-c` parameter and the number of windows we want to, for example:
+- testcafe -c 3 chrome firstTest.js
+
+We can also convine with headless like this:
+- testcafe -c 3 firefox:headless firstTest.js
 
 ### Script running issue:
 - When running from local using `testcafe chrome testname.js` for example, sometimes an error related to scripts run can pop up, we can skip this error by using:`Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted` in the terminal.
