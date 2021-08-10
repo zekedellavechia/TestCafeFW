@@ -1,13 +1,11 @@
-e2e_tests:
+name: TestCafe Workflow
+on: [push]
   image:
     name: testcafe/testcafe
     entrypoint: ["/bin/sh", "-c"]
   script:
     - /opt/testcafe/docker/testcafe-docker.sh firefox:headless,chromium tests/**/*
-
-name: TestCafe Workflow
-on: [push]
-
+    
 jobs:
   build:
     name: Run TestCafe Tests
