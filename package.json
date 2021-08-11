@@ -1,5 +1,13 @@
 {
   "scripts": {
+    "chrome": "testcafe chrome tests/*.js",
+    "firefox": "testcafe firefox tests/*.js",
+    "edge": "testcafe edge tests/*.js",
+    "safari": "testcafe safari tests/*.js",
+    "chromeHeadless": "testcafe chrome:headless tests/*.js",
+    "firefoxHeadless": "testcafe firefox:headless tests/*.js",
+    "edgeHeadless": "testcafe edge:headless tests/*.js",
+    "safariHeadless": "testcafe safari:headless tests/*.js",
     "classicReport": "testcafe chrome tests/*.js --reporter html:report.html",
     "allureReport": "testcafe chrome tests/*.js --reporter allure"
   },

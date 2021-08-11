@@ -11,4 +11,4 @@ jobs:
       - name: Install TestCafe from npm and Run Tests
         uses: DevExpress/testcafe-action@latest
         with:
-         args: "firefox:headless tests"
+         args: "chrome:headless tests"
