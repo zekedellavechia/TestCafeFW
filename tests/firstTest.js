@@ -14,6 +14,7 @@ const dateSelect = Selector('#datepicker')
 const formGroup = Selector('.form-group')
 const buttonSubmit = Selector('a').withText('Submit')
 const successText = Selector('h1')
+const formyButton = Selector('#logo')
 
 fixture `Fill forms and submit`
     .page `https://formy-project.herokuapp.com/form`;
@@ -39,3 +40,9 @@ test('Verify form can be submitted', async t => {
         .click(buttonSubmit)
         .expect(successText.textContent).eql('Thanks for submitting your form');
 });    
+
+test('Verify user can go to "Formy" main site', async t => {
+    await t
+    .click(formyButton)
+    .expect(successText.textContent).eql('Welcome to Formy');
+});
