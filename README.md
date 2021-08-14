@@ -84,4 +84,13 @@ When running from local using `testcafe chrome testname.js` for example, sometim
 ```bash
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted
 ```
+-----
+### Tutorials and Stuff:
+Great free tutorial from **TAU**:
+```bash
+https://testautomationu.applitools.com/testcafe-tutorial/
+```
 ---
+
+
+

@@ -17,8 +17,6 @@ test('Fill form one', async t => {
         .click(FormPage.buttonSubmit)
 });
 
-
-
 test('Verify form can be submitted', async t => {
     await t
         .click(FormPage.buttonSubmit)
