@@ -3,7 +3,7 @@ import FormPage from '../pages/formPage';
 fixture `Fill forms and submit`
     .page `https://formy-project.herokuapp.com/form`;
 
-test('Fill form one', async t => {
+test('Fill and submit form', async t => {
     await t
         .typeText(FormPage.firstName, 'Zeke')
         .typeText(FormPage.lastName, 'Dellavechia')
